@@ -1,0 +1,81 @@
+[  
+  {
+    "id": 1,
+    "name": "Rodrigo Del Angel",
+    "email": "rdelangelhmx@gmail.com",
+    "position": "Developer Full Stack",
+    "status": 1,
+    "pinned": false,
+    "active": true
+  },{
+    "id": 2,
+    "name": "Jane Cooper",
+    "email": "jane.cooper@example.com",
+    "position": "Regional Paradigm Technician",
+    "status": 0,
+    "pinned": true,
+    "active": true
+  },  
+  {
+    "id": 3,
+    "name": "Cody Fisher",
+    "email": "cody.fisher@example.com",
+    "position": "Directives Officer",
+    "status": 1,
+    "pinned": true,
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Esther Howard",
+    "email": "esther.howard@example.com",
+    "position": "Forward Response Manager",
+    "status": 1,
+    "pinned": true,
+    "active": true
+  },
+  {
+    "id": 5,
+    "name": "Jenny Wilson",
+    "email": "jenny.wilson@example.com",
+    "position": "Central Security Manager",
+    "status": 2,
+    "pinned": true,
+    "active": true
+  },
+  {
+    "id": 6,
+    "name": "Kristin Watson",
+    "email": "kristin.watson@example.com",
+    "position": "Internal Applications Manager",
+    "status": 1,
+    "pinned": false,
+    "active": true
+  },
+  {
+    "id": 7,
+    "name": "Cameron Williamson",
+    "email": "cameron.williamson@example.com",
+    "position": "Regional Paradigm Developer",
+    "status": 2,
+    "pinned": false,
+    "active": true
+  },
+  {
+    "id": 8,
+    "name": "Oliver Melcher",
+    "email": "oliver.melcher@example.com",
+    "position": "Project Manager",
+    "status": 0,
+    "pinned": false,
+    "active": true
+  },
+  {
+    "id": 9,
+    "name": "Sonia Rodriguez",
+    "email": "sonia.rodriguez@example.com",
+    "position": "Human Resources",
+    "status": 2,
+    "pinned": true,
+    "active": true
+  }]
