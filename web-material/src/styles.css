@@ -2,8 +2,18 @@
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 14px;
+  background: #F3F4F6;
+}
+
+.mat-body, .mat-body-1, .mat-typography {
+  background: #F3F4F6;
+  font: 400 14px/20px Inter, sans-serif;
+}
+
+.mat-form-field {
+  font-family: Inter, sans-serif;
 }
 
 .full-width {
@@ -147,9 +157,33 @@ p .mat-icon {
   }
 }
 
-.mat-toolbar.mat-custom {
-  background: #fff;
-  color: #000;
-  border-bottom: #666 1pt solid;
+.icon-img {
+  max-width: 18px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
+.avatar {
+  width: 40px;
+  height: 40px;
+  left: 0px;
+  top: 2px;
+  border-radius: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 12px;
+}
+
+.main {
+  padding: 12px 25px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  background: #F3F4F6;
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    padding:  25px 12px;
+  }
+}

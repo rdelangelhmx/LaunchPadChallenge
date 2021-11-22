@@ -1,0 +1,73 @@
+<div>
+  <mat-grid-list [cols]="colsPin" rowHeight="146px">
+    <mat-grid-tile *ngFor="let card of contacts">
+     <mat-card class="pin">
+        <table style="width: 100%;" [cellPadding]="0" [cellSpacing]="0" >
+          <tr>
+            <td class="td-wrap">
+              <span class="td-normal">{{card.name}}</span>
+              <span class="chip" style="margin-left: 15px;" *ngIf="card.status>0" [ngClass]="{'Active':card.status==1,'Busy':card.status==2}" >{{contactStatus[card.status]}}</span>
+            </td>
+            <td style="width: 5%; text-align: right;" rowspan="2"><img class="avatar" src="assets/img/contacts/contact00{{card.id}}.jpg" /></td>
+          </tr>
+          <tr>
+            <td class="td-wrap">
+              <span class="td-thin">{{card.position}}</span>
+            </td>
+          </tr>
+        </table>
+        <mat-card-footer>
+          <table style="width: 100%; border-top: 1px solid #E5E7EB;" [cellPadding]="0" [cellSpacing]="0" >
+            <tr style="height: 53px;">
+              <td class="pin-email">
+                <mat-icon class="td-thin">email</mat-icon>
+                <span style="vertical-align: super; margin-left: 14px;">Email</span>
+              </td>
+              <td class="pin-call">
+                <mat-icon class="td-thin">phone</mat-icon>
+                <span style="vertical-align: super; margin-left: 14px;">Call</span>
+              </td>
+            </tr>
+          </table>
+        </mat-card-footer>
+     </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<div >
+  <table mat-table [dataSource]="getDataSource(contacts)" class="full-width-table" aria-label="Contacts">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef style="width: 474px;">Name</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-grid-list [cols]="breakpoint" rowHeight="40px">
+          <mat-grid-tile [class.fullWidth]="breakpoint == 1" class="colContact1">
+            <img class="avatar" src="assets/img/contacts/contact00{{element.id}}.jpg" />
+          </mat-grid-tile>
+          <mat-grid-tile [class.fullWidth]="breakpoint == 1" class="colContact2">
+            <span class="td-normal">{{element.name}}</span><br>
+            <span class="td-thin">{{element.email}}</span>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef style="width: 438px;">Title</th>
+      <td mat-cell *matCellDef="let element">
+        <span class="td-normal">{{element.position}}</span><br>
+        <span class="td-thin">{{element.area}}</span>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef style="width: 143px;">Status</th>
+      <td mat-cell *matCellDef="let element">
+        <span class="chip" *ngIf="element.status>0" [ngClass]="{'Active':element.status==1,'Busy':element.status==2}" >{{contactStatus[element.status]}}</span>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="cols"></tr>
+    <tr mat-row *matRowDef="let element; columns: cols;"></tr>
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="3">No data matching the filter</td>
+    </tr>
+  </table>
+
+</div>

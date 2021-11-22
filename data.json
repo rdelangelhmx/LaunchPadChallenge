@@ -4,6 +4,7 @@
     "name": "Rodrigo Del Angel",
     "email": "rdelangelhmx@gmail.com",
     "position": "Developer Full Stack",
+	"area": "Optimization",
     "status": 1,
     "pinned": false,
     "active": true
@@ -12,6 +13,7 @@
     "name": "Jane Cooper",
     "email": "jane.cooper@example.com",
     "position": "Regional Paradigm Technician",
+	"area": "Optimization",
     "status": 0,
     "pinned": true,
     "active": true
@@ -21,6 +23,7 @@
     "name": "Cody Fisher",
     "email": "cody.fisher@example.com",
     "position": "Directives Officer",
+	"area": "Intranet",
     "status": 1,
     "pinned": true,
     "active": true
@@ -30,6 +33,7 @@
     "name": "Esther Howard",
     "email": "esther.howard@example.com",
     "position": "Forward Response Manager",
+	"area": "Directives",
     "status": 1,
     "pinned": true,
     "active": true
@@ -39,6 +43,7 @@
     "name": "Jenny Wilson",
     "email": "jenny.wilson@example.com",
     "position": "Central Security Manager",
+	"area": "Optimization",
     "status": 2,
     "pinned": true,
     "active": true
@@ -48,6 +53,7 @@
     "name": "Kristin Watson",
     "email": "kristin.watson@example.com",
     "position": "Internal Applications Manager",
+	"area": "Directives",
     "status": 1,
     "pinned": false,
     "active": true
@@ -57,6 +63,7 @@
     "name": "Cameron Williamson",
     "email": "cameron.williamson@example.com",
     "position": "Regional Paradigm Developer",
+	"area": "Optimization",
     "status": 2,
     "pinned": false,
     "active": true
@@ -66,6 +73,7 @@
     "name": "Oliver Melcher",
     "email": "oliver.melcher@example.com",
     "position": "Project Manager",
+	"area": "Optimization",
     "status": 0,
     "pinned": false,
     "active": true
@@ -74,7 +82,8 @@
     "id": 9,
     "name": "Sonia Rodriguez",
     "email": "sonia.rodriguez@example.com",
-    "position": "Human Resources",
+    "position": "Recruiter Intern",
+	"area": "Human Resoureces",
     "status": 2,
     "pinned": true,
     "active": true

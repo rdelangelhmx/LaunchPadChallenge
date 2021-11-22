@@ -16,7 +16,10 @@ response = require('../models/responseModel');
  
 exports.list = (req, res) => {
     // req it's filters
-    contacts.find({ active: true })
+    let filter = {
+        active: true
+    };
+    contacts.find(filter)
     .exec((err, records) => {
         if (err) {
             response.success = false;

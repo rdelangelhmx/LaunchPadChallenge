@@ -1,5 +1,5 @@
 /**
- * @file Clients Routes
+ * @file Contacts Routes
  * ----------------------------------
  * @author Rodrigo del Angel <rdelangelhmx@gmail.com>
  * ----------------------------------
@@ -16,11 +16,11 @@ controller = require('../controllers/contactsController');
  
 module.exports = (app) => {
     // get List 
-    app.route('/contactsAll')
+    app.route('/GetContactsAll')
         .get(controller.list);
 //        .get(authenticateJWT, apiController.list);  if add security token
     // get Record by id
-    app.route('/contactById/:id')
+    app.route('/GetContactById/:id')
         .get(controller.id);
 //        .get(authenticateJWT, apiController.id); if add security token
 };

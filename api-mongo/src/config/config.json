@@ -1,6 +1,6 @@
 {
     "App": {
-        "Port": 4200,
+        "Port": 4600,
         "Name": "appi-mongo",
         "Version": "1.0.0",
         "Description": "Api/Rest Challenge de Launchpad Studios",
