@@ -15,17 +15,35 @@ A — Angular ✅
 M — Angular Material ✅
 
 ## WEB Structure
-src
-|- controllers
-|- libs
-|- models
-|- routes
+- src
+    - app
+        - components
+        - enums
+        - models
+        - services
+        - views
+    - assets
+        - img
+            - contacts
+    - environment
 
 ## API Structure
-src
-|- controllers
-|- libs
-|- models
-|- routes
+- src
+    - config
+    - controllers
+    - models
+    - routes
 
+## Installation
 
+For Api/Rest 
+
+```bash
+npm start
+```
+
+For Web
+
+```bash
+ng serve -o
+```
