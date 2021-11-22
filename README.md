@@ -34,16 +34,26 @@ M — Angular Material ✅
     - models
     - routes
 
-## Installation
+## Install & Run solution
+Create and select destination directory
+```bash
+md rodrigo
+cd rodrigo
+```
+
+Clone repository from git
+```bash
+git clone https://github.com/rdelangelhmx/LaunchPadChallenge.git
+```
 
 For Api/Rest 
-
 ```bash
+cd api-mongo
 npm start
 ```
 
 For Web
-
 ```bash
+cd web-material
 ng serve -o
 ```
