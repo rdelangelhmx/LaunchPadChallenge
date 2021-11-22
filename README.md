@@ -34,7 +34,7 @@ M — Angular Material ✅
     - models
     - routes
 
-## Install & Run solution
+## Install & Run Solution
 Create and select destination directory
 ```bash
 md rodrigo
